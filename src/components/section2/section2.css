@@ -1,0 +1,100 @@
+.section2top {
+  margin-top: 4em;
+  text-align: center;
+}
+.section2top p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9e6a57;
+}
+.section2top h2 {
+  font-family: "Playfair Display";
+  font-size: 48px;
+  line-height: 107.1%;
+  color: #0a3880;
+}
+.section2BoxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1em;
+  margin-top: 2em;
+}
+.section2ContainerBlock {
+  cursor: pointer;
+  width: 32.3%;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  background: #fcf7e9;
+  transition: all 1s;
+}
+
+.section2Icon img {
+  background-color: rgb(232, 228, 228);
+  width: 1.6em;
+}
+.section2Content {
+  margin-top: 10px;
+}
+.section2Content h2 {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 107.1%;
+  color: #0a3880;
+}
+.section2Content p {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.3%;
+
+  color: #828282;
+}
+.section2Arrow {
+  display: inline-block;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9e6a57;
+}
+.section2ContainerBlock:hover {
+  display: block;
+  background: #0a3880;
+}
+.section2ContainerBlock:hover > .section2Content h2 {
+  color: white;
+}
+.section2ContainerBlock:hover > .section2Content p,
+.section2Arrow {
+  color: white;
+}
+@media screen and (max-width: 1033px) {
+  .section2BoxContainer {
+    display: block;
+  }
+
+  .section2ContainerBlock {
+    width: 100%;
+    margin-top: 1em;
+  }
+  .section2top {
+    margin-top: 2em;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1033px) {
+  .section2BoxContainer {
+    justify-content: center;
+  }
+}

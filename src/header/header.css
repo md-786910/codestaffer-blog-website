@@ -1,0 +1,91 @@
+.header-container {
+  margin-top: 1em;
+}
+nav {
+  position: relative;
+  z-index: 10000;
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  display: block;
+  object-fit: cover;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.humberger {
+  display: none;
+}
+.nav-items {
+  list-style: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 11px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#active-nav {
+  background: #9e6a57;
+}
+.mobile {
+  margin-left: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-number p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  color: #ffffff;
+}
+.nav-items:hover {
+  background-color: #9e6a57;
+}
+@media screen and (max-width: 1033px) {
+  nav {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    margin-top: 26px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile {
+    display: none;
+  }
+  .humberger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+}

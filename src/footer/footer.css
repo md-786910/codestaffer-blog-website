@@ -1,0 +1,53 @@
+.footerContainer {
+  padding-bottom: 5em;
+}
+.footerWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  box-sizing: border-box;
+  padding-top: 5em;
+}
+.footer1,
+.footer2,
+.footer3,
+.footer4 {
+  flex: 1;
+}
+.footer1 p {
+  font-family: "Neue Montreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.3%;
+  letter-spacing: 0.02em;
+  color: #828282;
+  margin-top: 10px;
+}
+.footerItem {
+  margin-top: 10px;
+}
+.footerItem a {
+  display: block;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #828282;
+}
+.footerTitle h3 {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  line-height: 107.1%;
+
+  color: #0a3880;
+}
+
+@media screen and (max-width: 1033px) {
+  .footerWrapper {
+    flex-direction: column;
+    gap: 2em;
+  }
+}

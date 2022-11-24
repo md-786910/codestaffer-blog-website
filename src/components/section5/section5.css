@@ -1,0 +1,149 @@
+.section5Container {
+  margin-top: 4em;
+  padding-bottom: 3em;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.section5Span span {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9e6a57;
+}
+.section5Div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.section5Title h2 {
+  font-family: "Playfair Display";
+  font-size: 48px;
+  line-height: 107.1%;
+  display: flex;
+  align-items: flex-end;
+  color: #0a3880;
+}
+
+.section5Btn button {
+  padding: 16px 20px;
+  height: 50px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 18px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background: #9e6a57;
+}
+
+.section5Card {
+  position: relative;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+.section5Item {
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  flex: 1;
+  overflow: hidden;
+}
+.section5cardImage {
+  overflow: hidden;
+}
+.section5cardImage img {
+  transition: all 0.5s ease;
+  display: inline-block;
+  object-fit: cover;
+  width: 100%;
+}
+.section5CardContent {
+  transition: all 0.5s ease;
+  position: absolute;
+  z-index: 10;
+  bottom: 2em;
+  padding-left: 2em;
+  width: 100%;
+  color: white;
+}
+.section5CardContent h4 {
+  font-family: "Playfair Display";
+  font-size: 28px;
+  line-height: 107.1%;
+  margin-bottom: 0.2em;
+}
+.section5CardContent span {
+  display: inline-block;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.section5Show {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  z-index: 103;
+  background-color: rgb(255, 255, 255);
+  height: 150%;
+  padding: 5em 4em;
+  box-sizing: border-box;
+  transition: all 1.5s;
+  display: none;
+}
+.section5Show h4 {
+  font-family: "Playfair Display";
+  font-size: 28px;
+  line-height: 107.1%;
+  color: #0a3880;
+}
+.section5Show p {
+  margin-top: 1.5em;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #828282;
+}
+
+.section5Item:hover > .section5Show {
+  display: block;
+  z-index: 150;
+  width: 100%;
+}
+.section5ShowSpan {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 565px) {
+  .section5Div {
+    gap: 1em;
+  }
+}
